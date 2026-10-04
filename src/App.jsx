@@ -12,10 +12,10 @@ export default function App() {
         <Menu />
         <div className="page">
           <Routes>
-            <Route path="/" element={Home} />
-            <Route path="/drift" element={Drift} />
-            <Route path="/timeattack" element={TimeAttack} />
-            <Route path="/forza" element={Forza} />
+            <Route path="/" element={<Home />} />
+            <Route path="/drift" element={<Drift />} />
+            <Route path="/timeattack" element={<TimeAttack />} />
+            <Route path="/forza" element={<Forza />} />
             <Route 
               path="*" 
               element={
