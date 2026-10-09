@@ -4,6 +4,7 @@ import Drift from "./pages/Drift";
 import Forza from "./pages/Forza";
 import Home from "./pages/Home";
 import TimeAttack from "./pages/TimeAttack";
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -16,17 +17,7 @@ export default function App() {
             <Route path="/drift" element={<Drift />} />
             <Route path="/timeattack" element={<TimeAttack />} />
             <Route path="/forza" element={<Forza />} />
-            <Route 
-              path="*" 
-              element={
-                <article className="article">
-                  <h1 className="article__title">Страница не найдена</h1>
-                  <p className="article__paragraph">Такой страницы не существует
-                    <a href="/" style={{ color: '#9f9' }}>На главную</a>
-                  </p>
-                </article>
-              } 
-            />
+            <Route path="* "element={<NotFound />} />
           </Routes>
         </div>
       </div>
